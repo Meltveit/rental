@@ -1,0 +1,164 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.calculator-input {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  border: 1px solid #d1d5db; /* border-gray-300 */
+  border-radius: 0.375rem; /* rounded-md */
+  outline: none;
+}
+
+.calculator-input:focus {
+  ring: 2px solid #3b82f6; /* focus:ring-blue-500 */
+}
+
+@media (prefers-color-scheme: dark) {
+  .calculator-input {
+    background-color: #374151; /* dark:bg-gray-700 */
+    border-color: #4b5563; /* dark:border-gray-600 */
+    color: #ffffff; /* dark:text-white */
+  }
+}
+
+.calculator-label {
+  display: block;
+  font-size: 0.875rem; /* text-sm */
+  font-weight: 500; /* font-medium */
+  color: #4b5563; /* text-gray-700 */
+  margin-bottom: 0.25rem; /* mb-1 */
+}
+
+@media (prefers-color-scheme: dark) {
+  .calculator-label {
+    color: #d1d5db; /* dark:text-gray-300 */
+  }
+}
+
+.calculator-btn {
+  padding: 0.5rem 1rem;
+  background-color: #2563eb; /* bg-blue-600 */
+  color: #ffffff; /* text-white */
+  border-radius: 0.375rem; /* rounded-md */
+  outline: none;
+}
+
+.calculator-btn:hover {
+  background-color: #1d4ed8; /* hover:bg-blue-700 */
+}
+
+.calculator-btn:focus {
+  ring: 2px solid #3b82f6; /* focus:ring-blue-500 */
+  ring-offset: 2px; /* focus:ring-offset-2 */
+}
+
+.calculator-card {
+  background-color: #ffffff; /* bg-white */
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); /* shadow-md */
+  border-radius: 0.5rem; /* rounded-lg */
+  overflow: hidden;
+  padding: 1.5rem; /* p-6 */
+}
+
+@media (prefers-color-scheme: dark) {
+  .calculator-card {
+    background-color: #1f2937; /* dark:bg-gray-800 */
+  }
+}
+
+.result-display {
+  margin-top: 1.5rem; /* mt-6 */
+  padding: 1rem; /* p-4 */
+  background-color: #f9fafb; /* bg-gray-50 */
+  border-radius: 0.375rem; /* rounded-md */
+  border: 1px solid #e5e7eb; /* border-gray-200 */
+}
+
+@media (prefers-color-scheme: dark) {
+  .result-display {
+    background-color: #374151; /* dark:bg-gray-700 */
+    border-color: #4b5563; /* dark:border-gray-600 */
+  }
+}
+
+/* Additional styles for prose content */
+.prose {
+  color: #4b5563; /* text-gray-700 */
+}
+
+@media (prefers-color-scheme: dark) {
+  .prose {
+    color: #d1d5db; /* dark:text-gray-300 */
+  }
+}
+
+.prose h2 {
+  font-size: 1.25rem; /* text-xl */
+  font-weight: 700; /* font-bold */
+  margin-top: 1.5rem; /* mt-6 */
+  margin-bottom: 1rem; /* mb-4 */
+  color: #111827; /* text-gray-900 */
+}
+
+@media (prefers-color-scheme: dark) {
+  .prose h2 {
+    color: #ffffff; /* dark:text-white */
+  }
+}
+
+.prose h3 {
+  font-size: 1.125rem; /* text-lg */
+  font-weight: 600; /* font-semibold */
+  margin-top: 1.25rem; /* mt-5 */
+  margin-bottom: 0.75rem; /* mb-3 */
+  color: #111827; /* text-gray-900 */
+}
+
+@media (prefers-color-scheme: dark) {
+  .prose h3 {
+    color: #ffffff; /* dark:text-white */
+  }
+}
+
+.prose p {
+  margin: 1rem 0; /* my-4 */
+}
+
+.prose ul {
+  list-style: disc;
+  list-style-position: inside;
+  margin: 1rem 0; /* my-4 */
+  margin-left: 1rem; /* ml-4 */
+}
+
+.prose li {
+  margin-bottom: 0.5rem; /* mb-2 */
+}
+
+.prose strong {
+  font-weight: 600; /* font-semibold */
+  color: #111827; /* text-gray-900 */
+}
+
+@media (prefers-color-scheme: dark) {
+  .prose strong {
+    color: #ffffff; /* dark:text-white */
+  }
+}
